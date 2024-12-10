@@ -214,7 +214,7 @@ export class Example extends Phaser.Scene {
       const paddleBody = getDyanmicBody(paddle);
       const ballY = ballBody.y + ballBody.halfHeight;
       const paddleY = paddleBody.y + paddleBody.halfHeight;
-      ballBody.velocity.y = ballY - paddleY;
+      ballBody.velocity.y = (ballY - paddleY) * 2;
     });
   }
 }
